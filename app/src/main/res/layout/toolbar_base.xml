@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    style="@style/toolbar_base"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_45"
+    app:contentInsetEnd="0dp"
+    app:contentInsetLeft="0dp"
+    app:contentInsetRight="0dp"
+    app:contentInsetStart="0dp"
+    app:contentInsetStartWithNavigation="0dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/dp_5"
+        android:layout_marginRight="@dimen/dp_5">
+
+        <LinearLayout
+            android:id="@+id/ll_left_back"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center">
+
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                app:srcCompat="@drawable/vector_ic_left_arrow" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_screen_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_4"
+            android:layout_toLeftOf="@+id/lin_right_view"
+            android:layout_toRightOf="@+id/ll_left_back"
+            android:gravity="center">
+
+            <com.meembusoft.safewaypharmaonline.view.CanaroTextView
+                android:id="@+id/text_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/dp_15"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_20" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lin_right_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal">
+
+
+            <RelativeLayout
+                android:id="@+id/rel_supplier_request"
+                android:layout_width="45dip"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:layout_marginTop="@dimen/dp_4"
+                android:layout_marginRight="@dimen/dp_10"
+                android:layout_marginBottom="@dimen/dp_4"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/iv_supplier_request"
+                    android:layout_width="35dip"
+                    android:layout_height="35dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    app:srcCompat="@drawable/vector_ic_user" />
+
+                <TextView
+                    android:id="@+id/tv_request_count"
+                    android:layout_width="20dip"
+                    android:layout_height="20dip"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/shape_circular_red_bg_view"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@color/whiteColor"
+                    android:textSize="@dimen/sp_10" />
+
+            </RelativeLayout>
+
+
+            <ImageView
+                android:id="@+id/iv_logout"
+                android:layout_width="28dip"
+                android:layout_height="28dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:layout_marginRight="@dimen/dp_5"
+                android:visibility="gone"
+                app:srcCompat="@drawable/vector_ic_logout_down" />
+
+            <ImageView
+                android:id="@+id/iv_right_menu"
+                android:layout_width="28dip"
+                android:layout_height="28dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:layout_marginRight="@dimen/dp_5"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</androidx.appcompat.widget.Toolbar>

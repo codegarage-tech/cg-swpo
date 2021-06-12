@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="80dip"
+    android:layout_height="wrap_content"
+    android:background="@color/color_grey_200"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_category"
+            android:layout_width="80dip"
+            android:layout_height="80dip"
+            app:srcCompat="@drawable/vector_ic_error"
+            android:padding="5dip" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:layout_marginBottom="@dimen/dp_2">
+
+            <TextView
+                android:id="@+id/list_item_task_text_view_task_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pla Erm 100ml"
+                android:maxLines="2"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/sp_10"
+                android:padding="@dimen/dp_2"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

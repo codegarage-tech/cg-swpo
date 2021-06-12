@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/frameLayout"
+    android:background="@color/whiteColor">
+
+    <RelativeLayout
+        android:id="@+id/ns_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/dp_50"
+            android:scrollbarStyle="insideOverlay">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/lin_card_order_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rv_medicine_order_list"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:clipToPadding="false"
+                            android:nestedScrollingEnabled="false"
+                            android:paddingLeft="@dimen/dp_5"
+                            android:paddingTop="@dimen/dp_5"
+                            android:paddingRight="@dimen/dp_5"
+                            android:paddingBottom="@dimen/dp_10"
+                            android:visibility="visible" />
+
+                    </LinearLayout>
+
+                    <include
+                        layout="@layout/layout_order_address_screen"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_3"
+                        android:layout_marginBottom="@dimen/dp_10"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+        <RelativeLayout
+            android:id="@+id/rel_bottom_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/whiteColor"
+            android:orientation="horizontal"
+            android:padding="@dimen/dp_7">
+
+                <TextView
+                    android:id="@+id/tv_totals_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="@dimen/dp_6"
+                    android:layout_marginLeft="@dimen/dp_2"
+                    android:ellipsize="end"
+                    android:text="0.0 /="
+                    android:textColor="@color/color_pink"
+                    android:textSize="@dimen/sp_16" />
+
+            <Button
+                android:id="@+id/btn_order_checkout"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_35"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/curv_shape_button_shape_bg_pink"
+                android:padding="@dimen/dp_2"
+                android:text="@string/title_checkout"
+                android:layout_marginRight="@dimen/dp_5"
+                android:textColor="@color/whiteColor" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_login_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_grey_200"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:srcCompat="@drawable/vector_ic_unauthorized" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/dp_20"
+            android:text="@string/txt_please_login_to_check_your_cart"
+            android:textColor="@color/color_grey_600"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="180dp"
+            android:layout_height="@dimen/dp_45"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/curv_shape_border_green_bg_transferent"
+            android:gravity="center"
+            android:text="LOGIN"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/sp_18"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_no_data_found_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:srcCompat="@drawable/vector_ic_empty_box" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/dp_20"
+            android:text="@string/txt_item_is_not_added_into_cart"
+            android:textColor="@color/color_grey_600"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+</FrameLayout>

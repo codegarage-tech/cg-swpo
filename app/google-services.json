@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "633093836478",
+    "firebase_url": "https://safewaypharmaonline.firebaseio.com",
+    "project_id": "safewaypharmaonline",
+    "storage_bucket": "safewaypharmaonline.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:633093836478:android:2d33a082cbf97ac04898ef",
+        "android_client_info": {
+          "package_name": "com.meembusoft.safewaypharmaonline"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "633093836478-f8ockm8h97ls9aik4gd72c1773ee8mq1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCCP6XJChSptod15aNhAJaCfuZrHE2bVFs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "633093836478-f8ockm8h97ls9aik4gd72c1773ee8mq1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

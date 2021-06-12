@@ -1,0 +1,330 @@
+<resources>
+    <!--<string name="app_name">SafeWayPharmaOnline</string>-->
+
+    <!-- Progress Dialog -->
+    <string name="progress_dialog_loading">Loading...</string>
+
+    <!-- Toast -->
+    <string name="toast_ignored_fast_click">Ignored fast click!</string>
+    <string name="toast_please_input_your_ssid">Please input your SSID</string>
+    <string name="toast_network_error">You have no internet connection!\nPlease connect to internet.</string>
+    <string name="toast_could_not_retrieve_info">Could not retrieve info</string>
+    <string name="toast_no_info_found">No info found</string>
+    <string name="toast_loaded_offline_data">Loaded offline data</string>
+    <string name="toast_cart_empty">Your cart is empty </string>
+    <string name="toast_check_the_cart_one_item">if there is not item checked, then please check at least one item. </string>
+    <string name="toast_check_the_cart">if checked, then please update your cart.. </string>
+    <string name="toast_check_the_cart_update">Please update the order </string>
+    <string name="toast_please_input_your_fullname">Please input your full name </string>
+    <string name="toast_please_input_your_username">Please input your username</string>
+    <string name="toast_please_input_your_mobile">Please input your mobile number</string>
+    <string name="toast_please_input_your_password">Please input your password</string>
+    <string name="toast_please_input_your_user">Please select a user</string>
+    <string name="toast_order_is_placed_successfully">Order cart is placed successfully</string>
+    <string name="toast_order_accept_successfully">Order is accepted successfully</string>
+    <string name="toast_order_skip_successfully">Order skip successfully</string>
+    <string name="toast_no_item_found">No item found</string>
+    <string name="toast_please_input_your_name">Please input your name</string>
+    <string name="toast_please_input_your_phone">Please input your phone no</string>
+    <string name="toast_please_input_your_email">Please input your email</string>
+    <string name="toast_please_input_your_street_address">Please input your street address</string>
+    <string name="toast_please_input_your_state">Please input your state</string>
+    <string name="toast_please_input_your_city">Please input your city</string>
+    <string name="toast_please_input_your_zipcode">Please input your zip code </string>
+    <string name="toast_please_input_your_valid_address">Please enter your valid address </string>
+    <string name="toast_please_select_shipping_area">Please select shipping area </string>
+    <string name="toast_please_select_shipping_address">Please select shipping address </string>
+    <string name="toast_please_shipping_address_invalid">Shipping address invalid </string>
+    <string name="toast_item_have_placed_cart">Already item have added into cart</string>
+
+    <string name="toast_order_api_under_development">Api under development</string>
+    <string name="toast_order_under_development">Under development</string>
+    <string name="toast_order_delete_mgs">Order delete successfully </string>
+    <string name="toast_notification_delete_mgs">Notification delete successfully </string>
+    <string name="toast_reminder_delete_mgs">Reminder delete successfully </string>
+    <string name="toast_select_your_start_date_mgs">Please select your start from</string>
+    <string name="toast_please_input_your_medicine_name">Please input your medicine name</string>
+    <string name="toast_please_input_your_medicine_qty">Please input your quantity</string>
+    <string name="toast_please_input_your_scheduling_time">Please input your scheduling time</string>
+    <string name="toast_please_select_start_from_date">Please select start from date</string>
+
+    <!--Common String-->
+    <string name="title_tk">TK </string>
+    <string name="title_submit">Submit </string>
+    <string name="title_save">Save </string>
+    <string name="title_contact">Contact </string>
+    <string name="title_pharmacy_info">Pharmacy Info </string>
+    <string name="title_pharmacy_map">Map </string>
+    <string name="title_emergency_help">Emergency Help </string>
+    <string name="txt_unknown_device">Unknown Device</string>
+
+    <!-- Dialog message -->
+    <string name="dialog_close_app_title">Close App</string>
+    <string name="dialog_do_you_want_to_close_the_app">Do you want to close the app?</string>
+    <string name="dialog_warning">Warning</string>
+    <string name="dialog_message">Message</string>
+    <string name="dialog_your_selected_items_will_be_removed_from_cart">Your selected item will be removed from cart</string>
+    <string name="dialog_the_item_will_be_removed_from_cart">The item will be removed from cart</string>
+    <string name="dialog_ok">OK</string>
+    <string name="dialog_retry">RETRY</string>
+    <string name="dialog_cancel">CANCEL</string>
+    <string name="dialog_enter_promo_code">Enter Promo Code</string>
+    <string name="dialog_promo_code">Promo Code</string>
+    <string name="dialog_do_you_wanna_close_the_app">Do you wanna close the app?</string>
+    <string name="dialog_your_payment_is_successful_but_could_not_process_the_order_due_to_no_network">Your payment is successful, but could not process the order due to no network</string>
+    <string name="dialog_add_attachment_title">Attach image</string>
+    <string name="dialog_add_attachment_camera_label">Camera</string>
+    <string name="dialog_add_attachment_gallery_label">Gallery</string>
+    <string name="dialog_add_attachment_select_source_label">Select source</string>
+    <string name="dialog_appout">AppOut</string>
+    <string name="dialog_reminder_status_label">Press ok when you\'ve taken your medicine</string>
+
+    Press ok when you've taken your medicine
+    <!--Log Out Dialog String-->
+    <string name="dialog_logout_title">Log out</string>
+    <string name="dialog_logout_mgs">Thanks for staying with us</string>
+    <!-- Font Area -->
+    <string name="typeface_500">fonts/MuseoSans500.otf</string>
+    <string name="typeface_700">fonts/MuseoSans700.otf</string>
+
+    <!--Home Page-->
+    <string name="title_show_now">Shop Now></string>
+    <string name="title_show_more">Shop More ></string>
+    <string name="title_category">Category</string>
+    <string name="title_see_more">See more ></string>
+    <string name="title_buy_now">Buy Now</string>
+    <string name="title_add_to_cart">Add To Cart</string>
+    <string name="title_collection">Collection</string>
+    <string name="title_heading">The Boss Baby</string>
+    <string name="title_base_seller">BestSeller</string>
+    <string name="title_general_medicine">General Medicine</string>
+    <string name="title_medical_instrument">Medical Instrument</string>
+    <string name="title_herbal_medicine">Herbal &amp; Yunani Medicine</string>
+    <string name="title_cosmetics">Cosmetics</string>
+    <string name="title_medical_cosmetics">Medicated Cosmetics</string>
+    <string name="title_baby_food_statioary">Baby Food &amp; Stationary</string>
+    <string name="title_baby_food_statioary2">Baby Food &amp; Sanitary</string>
+    <string name="title_kids_food">Kids food and sanitory</string>
+    <string name="title_why_choose_us">Why Choose Us?</string>
+    <string name="title_medical_support">Medical Support</string>
+    <string name="title_optics_lens">Optics &amp; Lens</string>
+    <string name="title_video">Video</string>
+    <string name="title_shop">Shop</string>
+    <string name="title_full_screen">Full Screen</string>
+    <string name="hint_input_search">Search</string>
+
+    <!--Home Menu-->
+    <string name="title_home">Home</string>
+    <string name="title_menu">Menu</string>
+    <string name="title_categories">Categories</string>
+    <string name="title_bluetooth_devices">Bluetooth Devices</string>
+    <string name="title_my_accounts">My Account</string>
+    <string name="title_my_orders">My Orders</string>
+    <string name="title_my_favourites">My Favourites</string>
+    <string name="title_notification">Notification</string>
+    <string name="title_message">Messages</string>
+    <string name="title_hotline">Hot Line</string>
+    <string name="title_license">Third Party License</string>
+    <string name="title_help">Emergency Help</string>
+    <string name="title_medicine_remainder">Medicine Reminder</string>
+    <string name="title_prescription">Prescription</string>
+    <string name="title_terms_and_condition">Terms and Conditions</string>
+
+    <string name="terms_and_condition_url">http://safeway-bd.com/terms_condition</string>
+
+    <!--Product Details-->
+    <string name="title_product_details_generic_name">Generic Name : </string>
+    <string name="title_product_details_box_size">Box size : </string>
+    <string name="title_product_details_form">Form : </string>
+    <string name="title_product_related_product">Related Product </string>
+    <string name="title_product_latest_product">Latest Product </string>
+    <string name="title_product_details">Product Detail </string>
+    <string name="title_product_of">A product of </string>
+    <string name="title_read_more">Read More ></string>
+    <string name="title_prescribing_details">Prescribing Details</string>
+    <string name="title_specifications">Specifications:</string>
+    <string name="title_service">Service:</string>
+    <string name="title_highlight">Highlights:</string>
+    <string name="title_details">Details:</string>
+    <string name="title_delete">Delete</string>
+
+    <!--Checkout Page-->
+    <string name="title_sub_totals">Sub Totals</string>
+    <string name="title_delivery_fee">Delivery Fee</string>
+    <string name="title_discount">Discount</string>
+    <string name="title_update_cart">Update Cart</string>
+    <string name="title_checkout">CheckOut</string>
+    <string name="title_totals_taka">Total Taka: </string>
+    <string name="title_completed_order">Completed Order</string>
+    <string name="title_BDT"> BDT</string>
+    <string name="title_quantity"> Quantity </string>
+    <string name="title_price"> Price </string>
+    <string name="title_upload_prescription">Upload Prescription </string>
+
+    <!--Delivery address-->
+    <string name="title_delivery_address">Your Delivery Address</string>
+    <string name="title_edit_delivery_address">Edit your delivery address</string>
+    <string name="title_more_essentials_product">More Essential Product</string>
+    <string name="title_add_new_address">+ Add new address</string>
+    <string name="title_add_shipping_address">Shipping Address</string>
+    <string name="title_payment_method">Payment Method</string>
+    <string name="title_cash_on_delivery">Cash on Delivery (COD)</string>
+    <string name="title_bkash_payment">Bkash Payment</string>
+
+    <!--Shipping Address-->
+    <string name="txt_shipping_address">Shipping Address</string>
+    <string name="txt_sa_name">Name</string>
+    <string name="txt_sa_phone">Phone</string>
+    <string name="txt_sa_address">Street Address</string>
+    <string name="txt_sa_full_address">Full Address</string>
+    <string name="txt_sa_country">Country</string>
+    <string name="txt_sa_state">State</string>
+    <string name="txt_sa_state_police">State/Police Station</string>
+    <string name="txt_sa_city">City</string>
+    <string name="txt_sa_zip">Zip Code</string>
+    <string name="txt_sa_add">Add</string>
+    <string name="txt_sa_edit">Edit</string>
+    <string name="txt_sa_view">View</string>
+
+    <!--AppSupplier Screen-->
+    <string name="title_accept_order">Accept</string>
+    <string name="title_skip_order">Skip</string>
+    <string name="title_order">Order</string>
+    <string name="title_supplier_details">Store Detail</string>
+    <string name="title_order_details">Order Detail</string>
+    <string name="title_my_order">My Order</string>
+
+    <!--Login and Registration Screen-->
+    <string name="title_login">Login</string>
+    <string name="title_login_username_hints">Username</string>
+    <string name="title_login_mobile_number_hints">Mobile Number</string>
+    <string name="title_login_pass_hints">Password</string>
+    <string name="title_login_have_account">Already have an account?</string>
+    <string name="title_reg_full_name_hints">Full Name</string>
+    <string name="title_reg_dont_account">Don\'t have account?</string>
+    <string name="title_reg">Registration</string>
+    <string name="title_sign_up">Sign up </string>
+    <string name="title_sign_up_now">Sign up now</string>
+    <string name="title_customer">I am Customer</string>
+    <string name="title_supplier">I am Supplier</string>
+    <string name="title_login_successful">Login successfully</string>
+    <string name="title_register_successful">Registration successfully</string>
+    <string name="title_login_header">Please provide the following information to complete your login</string>
+    <string name="title_sign_up_header">Please provide the following information to complete your registration</string>
+    <string name="title_add_reminder_successful">Successfully Add Reminder</string>
+
+    <!--Profile Screen -->
+    <string name="title_user_profile">Profile</string>
+    <string name="title_user_profile_name">Name</string>
+    <string name="title_user_profile_email">Email</string>
+    <string name="title_user_profile_address">Address</string>
+    <string name="title_user_profile_doe">Date of Birth</string>
+    <string name="title_user_profile_age">Age</string>
+    <string name="title_user_profile_blood">Blood</string>
+    <string name="title_user_profile_gender">Gender:</string>
+    <string name="title_user_profile_male">Male</string>
+    <string name="title_user_profile_female">Female</string>
+    <string name="title_user_profile_password">Password</string>
+    <string name="title_user_profile_city">City</string>
+    <string name="title_user_profile_state">State</string>
+    <string name="title_user_profile_photo">Photo </string>
+    <string name="title_user_profile_choose_file">Choose file</string>
+    <string name="title_user_profile_email_address">Email Address</string>
+    <string name="title_user_profile_supplier_shop">Shop Name</string>
+    <string name="title_user_profile_edit">Edit</string>
+    <string name="title_user_profile_cancel">Cancel</string>
+
+
+    <!-- Cart screen -->
+    <string name="txt_please_login_to_check_your_cart">Please login to check your cart.</string>
+    <string name="txt_item_is_not_added_into_cart">Item is not added into cart.</string>
+    <!-- Notification screen -->
+    <string name="txt_notification_is_not_found">Notification is not found.</string>
+    <string name="txt_this_feature_is_under_development">This feature is under development.</string>
+    <!-- Favourite screen -->
+    <string name="txt_favourite_is_not_found">There is no favorite item.</string>
+    <string name="txt_favourite_login_mgs">You must log in before proceeding </string>
+    <string name="toast_your_remove_favourite_items">Successfully remove to favourite item</string>
+
+    <!--Splash Page-->
+    <string name="txt_safeway_pharma">SAFEWAY PHARMA</string>
+    <string name="txt_the_online_pharmacy">The Online Pharmacy</string>
+    <!--Order Status-->
+    <string name="txt_order_progess_status">Progress</string>
+    <string name="txt_delivery_order_status">Delivery Order</string>
+    <string name="txt_order_processing_status">Order Processing</string>
+    <string name="txt_order_delivery_on_the_way_status">Delivery on the way</string>
+    <string name="txt_order_received_status">Received Order</string>
+    <string name="txt_order_received_payment_and_completed_status">Receive Payment and Finish</string>
+
+    <!--FCM -->
+    <string name="btn_show_token">Show Token</string>
+    <string name="btn_subscribe_news">Subscribe (News)</string>
+    <string name="btn_unsubscribe_news">Unsubscribe (News)</string>
+    <string name="notification_channel_id">default</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="txt_medicine_search">Medicine Search</string>
+    <string name="txt_you_can_search_for_particular_medicine_here">You can search for particular medicine here</string>
+
+    <!--BARCODE -->
+    <string name="txt_scan_your_qr_code_or_bar_code">Scan your QR Code or Bar Code</string>
+    <string name="txt_product_code">Product Code</string>
+    <string name="txt_sorry_we_could_not_detect_your_medicine">Sorry we could not detect your medicine</string>
+
+    <!--Search -->
+    <string name="txt_no_items_are_found">No items are found</string>
+
+    <!--Supplier-->
+    <string name="txt_total_tk">Total Taka : </string>
+    <!--Message-->
+    <string name="title_message_orders">Orders</string>
+    <string name="title_message_orders_info">Orders Information</string>
+    <string name="title_message_notifications">Notifications</string>
+    <string name="title_message_chats">Chats</string>
+    <string name="title_message_promos">Promos</string>
+    <string name="title_message_promos_mgs">Promo Message</string>
+    <string name="title_message_settings">Settings</string>
+    <string name="title_message_safeway_pharma">Safeway Pharma Online</string>
+
+    <string name="txt_promo_is_not_found">Promo is not found.</string>
+    <string name="txt_chat_is_not_found">Please Change the setting chat will be on.</string>
+    <string name="txt_reminder_session_not_found">Medicine Reminder is not found session today.</string>
+    <string name="txt_reminder_not_found">Reminder is not found.</string>
+
+
+    <!--Medicine Remainder-->
+    <string name="title_medicine_remainder_added">Add Remind Medicine </string>
+    <string name="title_medicine_remainder_pillbox">Pillbox </string>
+    <string name="title_medicine_remainder_session">Session left today</string>
+    <string name="title_set_medicine_remainder">Remind me this medicine</string>
+    <string name="title_medicine_remainder_start_from_date">Start From Date</string>
+    <string name="title_medicine_remainder_sat">Sat</string>
+    <string name="title_medicine_remainder_sun">Sun</string>
+    <string name="title_medicine_remainder_mon">Mon</string>
+    <string name="title_medicine_remainder_tus">Tus</string>
+    <string name="title_medicine_remainder_wed">Wed</string>
+    <string name="title_medicine_remainder_thu">Thu</string>
+    <string name="title_medicine_remainder_fri">Fri</string>
+
+    <string name="title_medicine_remainder_times_per_day">times per day</string>
+
+    <string name="txt_set_remainder_switch_yes">Yes</string>
+    <string name="txt_set_remainder_switch_no">No</string>
+
+    <string name="txt_medicine_remainder_day_one">Once per day</string>
+    <string name="txt_medicine_remainder_day_two">Twice per day</string>
+    <string name="txt_medicine_remainder_day_three">3 times per day</string>
+    <string name="txt_medicine_remainder_day_four">4 times per day</string>
+    <string name="txt_medicine_remainder_day_five">5 times per day</string>
+    <string name="txt_medicine_remainder_day_six">6 times per day</string>
+
+    <string name="txt_medicine_remainder_schedule_type_daily">Daily</string>
+    <string name="txt_medicine_remainder_schedule_type_weekly">Weekly</string>
+    <string name="txt_medicine_remainder_schedule_type_monthly">Monthly</string>
+    <string name="txt_please_take_your_medicine">Please take your medicine.</string>
+    <string name="txt_medicine_reminder">Medicine reminder</string>
+
+    <string name="title_medicine_remainder_status_successful">Status Update Successfully</string>
+    <string name="error_gif">x or y bound size should be at least %1$dpx and file size should be no more than %2$sM</string>
+
+</resources>

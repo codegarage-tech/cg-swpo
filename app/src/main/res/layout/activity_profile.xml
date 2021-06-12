@@ -1,0 +1,156 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rel_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteColor">
+
+    <include
+        android:id="@+id/appbarnavigationLayout"
+        layout="@layout/toolbar_profile" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/appbarnavigationLayout"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="0.4"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight=".3"
+                android:background="@drawable/vector_bg_image"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:orientation="vertical"
+                        android:gravity="center|bottom">
+                        <FrameLayout
+                            android:id="@+id/frameLayout_avatar_edit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/iv_profile"
+                            android:layout_width="90dip"
+                            android:layout_height="90dip"
+                            android:layout_centerInParent="true"
+                            android:layout_marginBottom="15dip"
+                            android:gravity="bottom"
+                            app:srcCompat="@drawable/avatar_placeholder_circular"/>
+
+                            <ImageView
+                                android:id="@+id/iv_profile_camera"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right|top"
+                                app:layout_collapseMode="parallax"
+                                app:srcCompat="@drawable/vector_ic_camera_circle" />
+                        </FrameLayout>
+
+                        <TextView
+                            android:id="@+id/txt_user_profile_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginBottom="20dip"
+                            android:gravity="center|bottom"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/sp_13" />
+
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight=".65"
+            android:gravity="top"
+            android:background="@color/whiteColor"
+            android:orientation="vertical">
+
+                <ScrollView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.0dip"
+                    android:layout_weight="1.0"
+                    android:scrollbarThumbVertical="@null"
+                    android:layout_marginBottom="@dimen/dp_50">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@color/whiteColor">
+                        <include
+                            android:id="@+id/lin_lay_user_profile_view_screen"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp_10"
+                            layout="@layout/layout_user_profile_view_screen" />
+
+                        <include
+                            android:id="@+id/lin_lay_user_edit_profile_view_screen"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp_10"
+                            layout="@layout/layout_user_edit_profile_view_screen"
+                            android:visibility="gone"/>
+                    </LinearLayout>
+                </ScrollView>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+<!--    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:orientation="vertical"
+        android:background="@color/colorPrimary">
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:text="@string/title_submit"
+            android:layout_gravity="center"
+            android:textSize="@dimen/small_font_size"
+            android:textColor="#ffffff"
+            android:textAllCaps="true"
+            android:textStyle="bold"/>
+    </LinearLayout>-->
+</RelativeLayout>

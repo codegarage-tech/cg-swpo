@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/row_main_lin_category"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/dp_2"
+    android:paddingBottom="@dimen/dp_2"
+    android:paddingRight="@dimen/dp_10"
+    android:paddingLeft="@dimen/dp_7"
+    android:layout_marginLeft="@dimen/dp_4"
+    android:layout_marginRight="@dimen/dp_4"
+    android:background="@drawable/unselect_category_item">
+
+
+    <ImageView
+        android:id="@+id/iv_category"
+        android:layout_width="28dip"
+        android:layout_height="28dip"
+        android:layout_gravity="center"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/dp_2"
+        android:layout_marginRight="@dimen/dp_2" />
+
+    <TextView
+        android:id="@+id/row_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_33"
+        android:gravity="center"
+        android:paddingLeft="5dp"
+        android:paddingRight="10dip"
+        android:paddingBottom="2dip"
+        android:text="Customer"
+        android:textAllCaps="false"
+        android:textColor="@color/whiteColor"
+        android:textSize="14.0sp"/>
+
+</LinearLayout>

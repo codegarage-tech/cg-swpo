@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/content_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:background="@color/white">
+
+                <ImageView
+                    android:layout_width="25dip"
+                    android:layout_height="25dip"
+                    android:padding="5dip"
+                    android:layout_gravity="right"
+                    app:srcCompat="@drawable/vector_favourite_empty_primary_color"/>
+
+
+                <ImageView
+                    android:id="@+id/iv_category"
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:padding="5dip"
+                    android:background="@mipmap/test_bp_measuring_machine"
+                    android:layout_marginTop="@dimen/dp_5"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="top"
+                    android:orientation="vertical"
+                    android:background="@color/white"
+                    android:layout_margin ="@dimen/dp_10">
+                <TextView
+                    android:id="@+id/list_item_task_text_view_task_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:fontFamily="@string/typeface_500"
+                    android:maxLines="1"
+                    android:text="Alacot DS 0.2%"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_12"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:fontFamily="@string/typeface_500"
+                    android:maxLines="1"
+                    android:text="Olapatadine HCI USP 0.2% and 0.1%"
+                    android:textColor="@color/color_grey_800"
+                    android:textSize="@dimen/sp_10" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:fontFamily="@string/typeface_500"
+                        android:maxLines="1"
+                        android:layout_marginBottom="@dimen/dp_5"
+                        android:text="$ 2700"
+                        android:textColor="@color/red_600"
+                        android:textSize="@dimen/sp_14"
+                        android:textStyle="bold"/>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dip"
+                        android:layout_gravity="center"
+                        android:background="@drawable/shape_circular_border_bg_green"
+                        android:text="@string/title_add_to_cart"
+                        android:textColor="@color/whiteColor"
+                        android:paddingLeft="@dimen/dp_10"
+                        android:paddingRight="@dimen/dp_10"/>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

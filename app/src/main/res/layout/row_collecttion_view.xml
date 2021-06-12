@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginRight="@dimen/dp_5">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_rectangle_border_accent_bg_green"
+        android:padding="@dimen/dp_3">
+
+        <ImageView
+            android:id="@+id/iv_collection"
+            android:layout_width="107dip"
+            android:layout_height="70dip"
+            android:scaleType = "fitXY"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_collection_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="-10dp"
+        android:layout_marginBottom="@dimen/dp_5"
+        android:background="@color/colorPrimary"
+        android:elevation="@dimen/dp_2"
+        android:gravity="center"
+        android:maxLines="1"
+        android:padding="@dimen/dp_3"
+        android:text="General Medicine"
+        android:textColor="@color/whiteColor"
+        android:textSize="@dimen/sp_10" />
+
+</LinearLayout>

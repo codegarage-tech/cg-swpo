@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/edittext_border_grey_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_5"
+            android:layout_weight=".4"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:layout_width="40dip"
+                    android:layout_height="40dip"
+                    android:background="@mipmap/test_image_alacot" />
+
+                <ImageView
+                    android:layout_width="40dip"
+                    android:layout_height="40dip"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:background="@mipmap/test_image_alacot" />
+
+                <ImageView
+                    android:layout_width="40dip"
+                    android:layout_height="40dip"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:background="@mipmap/test_image_alacot" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:layout_width="40dip"
+                    android:layout_height="40dip"
+                    android:background="@mipmap/test_image_alacot" />
+
+                <ImageView
+                    android:layout_width="40dip"
+                    android:layout_height="40dip"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:background="@mipmap/test_image_alacot" />
+
+                <ImageView
+                    android:layout_width="40dip"
+                    android:layout_height="40dip"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:background="@mipmap/test_image_alacot" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:layout_width="40dip"
+                    android:layout_height="40dip"
+                    android:background="@mipmap/test_image_alacot" />
+
+                <ImageView
+                    android:layout_width="40dip"
+                    android:layout_height="40dip"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:background="@mipmap/test_image_alacot" />
+
+                <ImageView
+                    android:layout_width="40dip"
+                    android:layout_height="40dip"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:background="@mipmap/test_image_alacot" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_weight=".6"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dp_5"
+                    android:layout_weight=".5"
+                    android:ellipsize="end"
+                    android:fontFamily="@string/typeface_500"
+                    android:text="12.00 PM"
+                    android:textColor="@color/color_grey_800"
+                    android:textSize="@dimen/sp_20"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/dp_3">
+
+                    <TextView
+                        android:layout_width="80dip"
+                        android:layout_height="22dip"
+                        android:background="@drawable/curv_shape_primary_color_bg"
+                        android:ellipsize="end"
+                        android:fontFamily="@string/typeface_500"
+                        android:gravity="center"
+                        android:text="Missed"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/sp_15" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_15"
+                android:layout_marginBottom="@dimen/dp_5"
+                android:ellipsize="end"
+                android:fontFamily="@string/typeface_500"
+                android:gravity="bottom"
+                android:text="Seclo, Napa, Ceevit, Sergel and filmet"
+                android:textColor="@color/color_grey_800"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_5"
+                android:ellipsize="end"
+                android:fontFamily="@string/typeface_500"
+                android:gravity="bottom"
+                android:text="Seclo, Napa, Ceevit, Sergel and filmet"
+                android:textColor="@color/color_grey_800"
+                android:textSize="@dimen/sp_14" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

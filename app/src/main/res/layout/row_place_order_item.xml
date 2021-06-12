@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_2"
+        android:layout_marginTop="@dimen/dp_5"
+        android:layout_marginRight="@dimen/dp_2"
+        card_view:cardBackgroundColor="@color/white"
+        card_view:cardCornerRadius="7dp"
+        card_view:cardElevation="2dip">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+        <View
+            android:id="@+id/row_place_order_view_ribbon"
+            android:layout_width="5dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorOrderStateGreen" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_place_order_name"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_weight=".6"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:padding="@dimen/dp_2"
+                    android:text="Order Name"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_16" />
+
+                <TextView
+                    android:id="@+id/tv_place_order_totals_amount"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_3"
+                    android:layout_weight=".4"
+                    android:gravity="right"
+                    android:padding="@dimen/dp_5"
+                    android:text="100 tk"
+                    android:textColor="@color/color_pink"
+                    android:textSize="@dimen/sp_14"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/dp_10"
+                android:paddingTop="@dimen/dp_3"
+                android:paddingRight="@dimen/dp_10"
+                android:paddingBottom="@dimen/dp_7">
+
+
+                <TextView
+                    android:id="@+id/tv_place_order_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dp_2"
+                    android:drawableStart="@drawable/vector_ic_location_pin_14dp"
+                    android:drawableLeft="@drawable/vector_ic_location_pin_14dp"
+                    android:drawablePadding="@dimen/dp_5"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="Dhaka,Bangladesh"
+                    android:textSize="@dimen/sp_12" />
+
+
+                <TextView
+                    android:id="@+id/tv_place_order_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_2"
+                    android:drawableStart="@drawable/vector_ic_calendar_14dp"
+                    android:drawableLeft="@drawable/vector_ic_calendar_14dp"
+                    android:drawablePadding="@dimen/dp_5"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/dp_2"
+                    android:text="Monday,Jul 11,2018"
+                    android:textSize="@dimen/sp_12" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:gravity="top"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_place_order_transaction_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/dp_7"
+                        android:layout_marginRight="@dimen/dp_7"
+                        android:text="Pending"
+                        android:textColor="@color/green_600"
+                        android:textSize="@dimen/sp_14" />
+
+                    <Button
+                        android:id="@+id/btn_place_order_delete"
+                        android:layout_width="wrap_content"
+                        android:layout_height="24dip"
+                        android:layout_gravity="center"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="@dimen/dp_2"
+                        android:background="@drawable/shape_circular_border_bg_green"
+                        android:backgroundTint="@color/color_pink"
+                        android:paddingLeft="@dimen/dp_5"
+                        android:paddingRight="@dimen/dp_5"
+                        android:text="@string/title_delete"
+                        android:textAllCaps="true"
+                        android:textColor="@color/whiteColor"
+                        android:textSize="@dimen/sp_11"
+                        android:visibility="gone"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+

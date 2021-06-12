@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/lin_row_main"
+    android:layout_width="70dip"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/dp_5"
+    android:paddingRight="@dimen/dp_5">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="@dimen/sp_50"
+                android:layout_height="@dimen/sp_50"
+                android:background="@drawable/shape_circular_white_bg"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_marginBottom="@dimen/dp_10">
+
+                <ImageView
+                    android:id="@+id/iv_store"
+                    android:layout_width="20dip"
+                    android:layout_height="20dip"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/vector_ic_login_user_grey" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_store_first_name"
+                android:layout_width="22dip"
+                android:layout_height="22dip"
+                android:layout_gravity="right|bottom"
+                android:background="@drawable/shape_circular_pink_bg_view"
+                android:gravity="center"
+                android:text="E"
+                android:ellipsize="end"
+                android:textColor="@color/whiteColor"
+                android:textSize="@dimen/dp_10"
+                android:textAllCaps="true"
+                android:visibility="gone"/>
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_store_full_name"
+            android:layout_width="match_parent"
+            android:layout_height="30dip"
+            android:layout_marginTop="@dimen/dp_2"
+            android:layout_gravity="top|center"
+            android:gravity="top|center"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_10" />
+
+    </LinearLayout>
+
+</LinearLayout>

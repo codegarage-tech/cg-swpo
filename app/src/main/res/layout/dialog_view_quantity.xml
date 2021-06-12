@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dip"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingTop="16dip"
+    android:paddingLeft="10dip"
+    android:paddingRight="16dip"
+    android:paddingBottom="10dip">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_quantity"
+        android:textSize="20sp"
+        android:layout_marginBottom="8dip"
+        android:textColor="@color/color_grey_800"
+     />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/et_qty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_grey_background"
+            android:maxLength="3"
+            android:inputType="number"
+            android:padding="@dimen/dp_10" />
+
+        <Button
+            android:id="@+id/btn_dialog_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/curv_shape_button_shape_bg_pink"
+            android:text="@string/title_submit"
+            android:textAllCaps="true"
+            android:textColor="@color/whiteColor"
+          />
+
+        <TextView
+            android:id="@+id/tv_dialog_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/dp_10"
+            android:padding="14dip"
+            android:background="@drawable/button_grey_background"
+            android:text="@string/dialog_cancel"
+            android:textAllCaps="true"
+            android:textColor="@color/red_500" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

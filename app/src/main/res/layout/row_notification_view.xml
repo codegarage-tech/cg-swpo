@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite">
+
+    <LinearLayout
+        android:id="@+id/lin_notification_icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="@dimen/dp_5"
+        android:layout_marginLeft="@dimen/dp_5"
+        android:layout_marginStart="@dimen/dp_5"
+        android:layout_marginTop="@dimen/dp_7"
+        android:background="@drawable/shape_circular_bg_view"
+        android:backgroundTint="@color/grey4"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/iv_notification"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            app:srcCompat ="@drawable/vector_ic_notification_white" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_notification_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/lin_notification_icon"
+        android:layout_toEndOf="@+id/lin_notification_icon"
+        android:text="Hello"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:paddingTop="@dimen/dp_5"
+        android:layout_marginLeft="@dimen/dp_5"
+        android:paddingLeft="@dimen/dp_3"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tv_notification_mgs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_notification_title"
+        android:layout_toRightOf="@+id/lin_notification_icon"
+        android:layout_toEndOf="@+id/lin_notification_icon"
+        android:text="It is a long established fact that a reader will be distracted"
+        android:textColor="@color/color_grey_900"
+        android:textSize="14sp"
+        android:paddingTop="@dimen/dp_2"
+        android:layout_marginLeft="@dimen/dp_5"
+        android:paddingLeft="@dimen/dp_3" />
+
+    <TextView
+        android:id="@+id/tv_notification_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_notification_mgs"
+        android:layout_toEndOf="@+id/lin_notification_icon"
+        android:layout_toRightOf="@+id/lin_notification_icon"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:paddingTop="@dimen/dp_3"
+        android:layout_marginLeft="@dimen/dp_5"
+        android:paddingLeft="@dimen/dp_3"
+        android:paddingBottom="@dimen/dp_3"
+        android:text="29-Mar-2018"
+        android:textColor="@color/grey4"
+        android:visibility="gone"/>
+
+
+    <View
+        style="@style/Separator"
+        android:layout_alignLeft="@+id/tv_notification_date"
+        android:layout_alignStart="@+id/tv_notification_date"
+        android:layout_below="@+id/tv_notification_date"
+        android:layout_marginTop="@dimen/dp_5"
+        android:layout_marginBottom="@dimen/dp_3"/>
+</RelativeLayout>

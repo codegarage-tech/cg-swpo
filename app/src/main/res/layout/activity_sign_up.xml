@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:gravity="top"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/app_toolbar"
+        layout="@layout/toolbar_base" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/app_toolbar"
+        android:background="@color/whiteColor"
+        android:scrollbarSize="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="190dip"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/dp_40"
+                    android:layout_weight=".5"
+                    android:gravity="top"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_log_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dp_10"
+                        android:text="@string/title_sign_up_header"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/sp_14" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:gravity="center"
+                    android:layout_marginRight="-5dp"
+                    android:layout_marginTop="-10dip">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:srcCompat="@drawable/vector_round_shape_login_view" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center|right"
+                            >
+
+                            <ImageView
+                                android:layout_width="@dimen/dp_60"
+                                android:layout_height="@dimen/dp_60"
+                                android:layout_alignParentRight="true"
+                                android:layout_gravity="center"
+                                android:layout_marginRight="@dimen/dp_20"
+                                android:layout_marginBottom="@dimen/dp_10"
+                                android:background="@drawable/app_logo_original" />
+                        </LinearLayout>
+                    </FrameLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:gravity="center">
+
+                    <include
+                        android:id="@+id/lin_sign_up_form"
+                        layout="@layout/view_sign_up_screen"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dp_20"
+                        android:layout_marginRight="@dimen/dp_20" />
+
+                    <LinearLayout
+                        android:id="@+id/lin_sign_up_next"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/dp_40"
+                        android:layout_below="@id/lin_sign_up_form"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="@dimen/dp_5"
+                        android:layout_marginTop="@dimen/dp_15"
+                        android:background="@drawable/shape_bg_primary_color_right_round"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:paddingLeft="@dimen/dp_15"
+                            android:paddingRight="@dimen/dp_15"
+                            android:text="@string/title_sign_up"
+                            android:textAllCaps="true"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/sp_14"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="@dimen/dp_45"
+                        android:layout_height="@dimen/dp_45"
+                        android:layout_below="@id/lin_sign_up_form"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="bottom|right|end"
+                        android:layout_marginTop="@dimen/dp_5"
+                        android:layout_marginRight="@dimen/dp_40"
+                        android:layout_marginBottom="@dimen/dp_5"
+                        android:background="@drawable/shape_circular_bg_view"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:layout_width="21dp"
+                            android:layout_height="22dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/dp_10"
+                            android:layout_marginRight="@dimen/dp_2"
+                            android:gravity="center"
+                            android:scaleType="fitXY"
+                            app:srcCompat="@drawable/vector_ic_right_back" />
+
+                    </LinearLayout>
+
+
+                    <!--<RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="28dip">
+
+
+                    </RelativeLayout>-->
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dip"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/dp_15"
+                        android:layout_marginRight="@dimen/dp_5"
+                        android:gravity="center"
+                        android:padding="@dimen/dp_2"
+                        android:text="@string/title_login_have_account"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/sp_15"
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:id="@+id/tv_login"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/dp_2"
+                        android:layout_marginRight="@dimen/dp_20"
+                        android:gravity="center"
+                        android:padding="@dimen/dp_2"
+                        android:text="@string/title_login"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/sp_15"
+                        android:textStyle="italic" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/user_customer"
+        android:icon="@drawable/vector_ic_login_user_grey"
+        android:title="@string/title_login"
+        android:checked="true"
+        android:iconTint="@color/colorPrimaryDark"/>
+
+    <item
+        android:id="@+id/user_supplier"
+        android:icon="@drawable/ic_explore"
+        android:title="   "
+        android:iconTint="@color/colorPrimaryDark"
+        />
+</menu>

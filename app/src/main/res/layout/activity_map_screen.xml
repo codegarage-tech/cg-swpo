@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_grey_300">
+
+    <include
+        android:id="@+id/app_toolbar"
+        layout="@layout/toolbar_base" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/app_toolbar"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/map_container1"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="0.75"
+            android:orientation="horizontal">
+
+            <fragment
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                map:cameraZoom="8"
+                tools:context=".activity.MapActivity" />
+
+            <RelativeLayout
+                android:id="@+id/rl_pharmacy_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginTop="@dimen/dp_2"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:layout_marginBottom="@dimen/dp_2"
+                    card_view:cardCornerRadius="5dp"
+                    card_view:cardElevation="4dip">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_pharmacy_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:paddingLeft="@dimen/dp_7"
+                            android:paddingTop="@dimen/dp_3"
+                            android:text="@string/title_pharmacy_info"
+                            android:textColor="@color/color_grey_800"
+                            android:textSize="@dimen/sp_12" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height=".8dip"
+                            android:layout_marginTop="@dimen/dp_2"
+                            android:layout_marginBottom="@dimen/dp_4"
+                            android:background="@color/color_grey_500" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+
+                            <LinearLayout
+                                android:id="@+id/lin_lay_user_view"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_marginLeft="@dimen/dp_10"
+                                android:layout_marginRight="@dimen/dp_5"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:id="@+id/iv_user"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:scaleType="centerCrop"
+                                    app:srcCompat="@drawable/vector_ic_user_grey" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/lin_lay_user_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/dp_5"
+                                android:layout_marginRight="@dimen/dp_5"
+                                android:layout_toStartOf="@+id/lin_user_contact"
+                                android:layout_toLeftOf="@+id/lin_user_contact"
+                                android:layout_toEndOf="@+id/lin_lay_user_view"
+                                android:layout_toRightOf="@+id/lin_lay_user_view"
+                                android:gravity="left"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/tv_name"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/dp_2"
+                                    android:ellipsize="end"
+                                    android:gravity="center_vertical"
+                                    android:text="Md. Hozrot Belal"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/sp_10"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/tv_like_percent"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="@dimen/dp_2"
+                                    android:ellipsize="end"
+                                    android:textColor="@color/color_grey_600"
+                                    android:textSize="@dimen/sp_10" />
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:id="@+id/lin_user_contact"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="@dimen/dp_10"
+                                android:background="@drawable/curv_shape_border_green_radius_5"
+                                android:clipToPadding="false"
+                                android:gravity="center"
+                                android:orientation="horizontal"
+                                android:padding="@dimen/dp_3">
+
+                                <ImageView
+                                    android:layout_width="@dimen/dp_20"
+                                    android:layout_height="@dimen/dp_20"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentLeft="true"
+                                    android:paddingTop="@dimen/dp_2"
+                                    android:paddingBottom="@dimen/dp_2"
+                                    android:tint="@color/colorPrimary"
+                                    app:srcCompat="@drawable/vector_ic_phone_grey" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:ellipsize="end"
+                                    android:gravity="center"
+                                    android:paddingLeft="@dimen/dp_5"
+                                    android:paddingRight="@dimen/dp_5"
+                                    android:text="@string/title_contact"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textSize="@dimen/sp_10" />
+
+                            </LinearLayout>
+
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height=".8dip"
+                            android:layout_marginTop="@dimen/dp_2"
+                            android:layout_marginBottom="@dimen/dp_4"
+                            android:background="@color/color_grey_500" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:id="@+id/lin_lay_user_address_view"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_marginLeft="@dimen/dp_12"
+                                android:layout_marginRight="@dimen/dp_5"
+                                android:gravity="center"
+                                android:layout_gravity="center"
+                                >
+
+                                <ImageView
+                                    android:id="@+id/iv_adddress"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:scaleType="centerCrop"
+                                    android:tint="@color/colorPrimary"
+                                    app:srcCompat="@drawable/vector_ic_address" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/dp_2"
+                                android:layout_marginRight="@dimen/dp_5"
+                                android:layout_toEndOf="@+id/lin_lay_user_address_view"
+                                android:layout_toRightOf="@+id/lin_lay_user_address_view"
+                                android:gravity="left"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/tv_shopname"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:ellipsize="end"
+                                    android:gravity="center_vertical"
+                                    android:text="Dhaka Pharmacy"
+                                    android:textColor="@color/color_grey_500"
+                                    android:textSize="@dimen/sp_10"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/tv_address"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="@dimen/dp_5"
+                                    android:ellipsize="end"
+                                    android:text="La-58, Moddho Badda, Pragati Sarani, Dhaka-1212"
+                                    android:textColor="@color/color_grey_500"
+                                    android:textSize="@dimen/sp_10" />
+                            </LinearLayout>
+
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height=".8dip"
+                            android:layout_marginTop="@dimen/dp_2"
+                            android:layout_marginBottom="@dimen/dp_4"
+                            android:background="@color/color_grey_500" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:id="@+id/lin_lay_user_email_address"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_marginLeft="@dimen/dp_12"
+                                android:layout_marginRight="@dimen/dp_5"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:id="@+id/iv_email"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:scaleType="centerCrop"
+                                    android:tint="@color/colorPrimary"
+                                    app:srcCompat="@drawable/vector_email_empty_grey" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/dp_5"
+                                android:layout_marginRight="@dimen/dp_5"
+                                android:layout_toEndOf="@+id/lin_lay_user_email_address"
+                                android:layout_toRightOf="@+id/lin_lay_user_email_address"
+                                android:gravity="left"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/tv_email"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:ellipsize="end"
+                                    android:gravity="center_vertical"
+                                    android:text="belal.cse.brur@gmail.com"
+                                    android:textColor="@color/color_grey_500"
+                                    android:textSize="@dimen/sp_10" />
+
+                            </LinearLayout>
+
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height=".8dip"
+                            android:layout_marginTop="@dimen/dp_2"
+                            android:layout_marginBottom="@dimen/dp_2"
+                            android:background="@color/color_grey_500" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginBottom="@dimen/dp_5"
+                            android:layout_marginLeft="@dimen/dp_5"
+                            android:padding="@dimen/dp_3"
+                            android:text="@string/title_pharmacy_info"
+                            android:textColor="@color/color_grey_800"
+                            android:textSize="@dimen/sp_12" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/map_container2"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="0.25"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_7"
+                android:layout_marginBottom="@dimen/dp_7"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_medical_cosmetic_title"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".7"
+                    android:text="@string/title_medical_cosmetics"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/sp_16" />
+
+                <TextView
+                    android:id="@+id/tv_medical_cosmetic_shop_more"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:layout_weight=".3"
+                    android:gravity="right"
+                    android:text="@string/title_show_more"
+                    android:textAllCaps="true"
+                    android:textColor="@color/red_400"
+                    android:textSize="@dimen/sp_13"
+                    android:textStyle="italic" />
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_medicated_cosmetic_product"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:nestedScrollingEnabled="false"
+                android:paddingLeft="@dimen/dp_10"
+                android:paddingRight="@dimen/dp_3"
+                android:visibility="visible" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

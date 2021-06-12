@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:layout_margin="@dimen/dp_2"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_medicine_by_category"
+            android:layout_width="match_parent"
+            android:layout_height="100dip"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/vector_ic_error" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dp_10"
+            android:paddingRight="@dimen/dp_10"
+            android:paddingBottom="@dimen/dp_5">
+
+            <TextView
+                android:id="@+id/tv_empty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_grey_900"
+                android:textSize="@dimen/sp_12"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/tv_form_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_grey_900"
+                android:textSize="@dimen/sp_12"
+                android:singleLine="true"
+                android:ellipsize="end" />
+
+            <TextView
+                android:id="@+id/tv_generic_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_grey_900"
+                android:textSize="@dimen/sp_12"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:maxLines="1"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:text="@string/title_tk"
+                    android:textColor="@color/color_pink"
+                    android:textSize="@dimen/sp_12"
+                    android:singleLine="true"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/tv_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:ellipsize="end"
+                    android:textColor="@color/color_pink"
+                    android:textSize="@dimen/sp_12"
+                    android:textStyle="bold"/>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_strike_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_grey_900"
+                android:textSize="@dimen/sp_12"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

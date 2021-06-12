@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_grey_800"
+    android:fitsSystemWindows="false">
+
+    <include
+        android:id="@+id/appbarnavigationLayout"
+        layout="@layout/toolbar_details" />
+
+
+    <com.meembusoft.safewaypharmaonline.util.TouchImageView
+        android:id="@+id/iv_full_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/appbarnavigationLayout">
+    </com.meembusoft.safewaypharmaonline.util.TouchImageView>
+
+    <!--
+        <com.trux24.widget.TouchImageView
+            android:layout_below="@+id/appbarnavigationLayout"
+            android:id="@+id/imageViewAttachment"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/attachment" />
+    -->
+</RelativeLayout>

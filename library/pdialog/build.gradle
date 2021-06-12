@@ -1,0 +1,46 @@
+apply plugin: 'com.android.library'
+//apply plugin: 'com.novoda.bintray-release' // must be applied after your artifact generating plugin (eg. java / com.android.library)
+
+
+android {
+    compileSdkVersion appCompileSdkVersion
+    buildToolsVersion appBuildToolsVersion
+
+    defaultConfig {
+        minSdkVersion appMinSdkVersion
+        targetSdkVersion appTargetSdkVersion
+        versionCode 128
+        versionName "1.2.8"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation "androidx.annotation:annotation:$androidXAnnotation"
+    implementation "androidx.appcompat:appcompat:$androidXAppcompat"
+}
+
+
+//publish {
+//    userOrg = 'ymex'
+//    groupId = 'cn.ymex'
+//    artifactId = 'popup-dialog'
+//    publishVersion = '1.2.7'
+//    desc = 'notice widget for Android'
+//    website = 'https://github.com/ymex/popup-dialog'
+//}
+//tasks.withType(JavaCompile) {
+//    options.encoding = "UTF-8"
+//}
+//task androidJavadocs(type: Javadoc) {
+//    allprojects {
+//        tasks.withType(Javadoc) {
+//            options.encoding = "UTF-8"
+//        }
+//    }
+//}

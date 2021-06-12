@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:background="@color/colorPrimary">
+
+    <include
+        android:id="@+id/app_toolbar"
+        layout="@layout/toolbar_base" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarSize="0dp"
+        android:background="@color/whiteColor">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/whiteColor">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="190dip"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/dp_40"
+                    android:layout_weight=".5"
+                    android:gravity="top"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_log_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dp_10"
+                        android:text="@string/title_login_header"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/sp_14" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:gravity="center"
+                    android:layout_marginRight="-5dp"
+                    android:layout_marginTop="-10dip">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:srcCompat="@drawable/vector_round_shape_login_view" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="right"
+                           >
+
+                            <ImageView
+                                android:layout_width="@dimen/dp_60"
+                                android:layout_height="@dimen/dp_60"
+                                android:layout_alignParentRight="true"
+                                android:layout_gravity="center"
+                                android:layout_marginRight="@dimen/dp_20"
+                                android:layout_marginBottom="@dimen/dp_10"
+                                android:background="@drawable/app_logo_original" />
+                        </LinearLayout>
+                    </FrameLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <com.fxn.BubbleTabBar
+                    android:id="@+id/bubble_tabbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:padding="@dimen/dp_5"
+                    app:bubbletab_disabled_icon_color="@color/colorPrimaryDark"
+                    app:bubbletab_horizontal_padding="10dp"
+                    app:bubbletab_icon_size="20dp"
+                    app:bubbletab_menuResource="@menu/user_menu"
+                    app:bubbletab_title_size="16sp"
+                    app:bubbletab_vertical_padding="10dp">
+
+                </com.fxn.BubbleTabBar>
+            </LinearLayout>
+
+
+            <include
+                android:id="@+id/lin_login_form"
+                layout="@layout/view_login_screen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_20"
+                android:layout_marginRight="@dimen/dp_20" />
+
+            <LinearLayout
+                android:id="@+id/lin_login_next"
+                android:layout_width="@dimen/dp_45"
+                android:layout_height="@dimen/dp_45"
+                android:layout_below="@id/lin_login_form"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="bottom|right|end"
+                android:layout_marginTop="@dimen/dp_15"
+                android:layout_marginRight="@dimen/dp_40"
+                android:layout_marginBottom="@dimen/dp_5"
+                android:background="@drawable/shape_circular_bg_view"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="21dp"
+                    android:layout_height="22dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_marginRight="@dimen/dp_2"
+                    android:gravity="center"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/vector_ic_right_back" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lin_sign_up"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_marginTop="@dimen/dp_5"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/dp_15"
+                    android:layout_marginRight="@dimen/dp_5"
+                    android:padding="@dimen/dp_2"
+                    android:text="@string/title_reg_dont_account"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/sp_15"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/tv_register"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_2"
+                    android:layout_marginRight="@dimen/dp_20"
+                    android:gravity="center"
+                    android:padding="@dimen/dp_2"
+                    android:text="@string/title_sign_up_now"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/sp_15"
+                    android:textStyle="italic" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+</LinearLayout>

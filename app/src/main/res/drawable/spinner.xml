@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:bottom="@dimen/dp_11"
+        android:drawable="@mipmap/ic_launcher"
+        android:left="@dimen/dp_11"
+        android:right="@dimen/dp_11"
+        android:top="@dimen/dp_11" />
+    <item>
+        <rotate
+            android:duration="3000"
+            android:fromDegrees="0"
+            android:interpolator="@android:anim/linear_interpolator"
+            android:pivotX="50%"
+            android:pivotY="50%"
+            android:toDegrees="360">
+            <shape android:shape="oval" >
+                <solid android:color="@android:color/transparent"/>
+                <stroke android:dashGap="@dimen/dp_8" android:dashWidth="@dimen/dp_6" android:color="@color/colorPrimary" android:width="@dimen/dp_2"/>
+
+                </shape>
+
+        </rotate>
+    </item>
+
+</layer-list>

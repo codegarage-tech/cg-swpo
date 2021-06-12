@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:tools="http://schemas.android.com/tools">
+    <item n1:state_enabled="false"
+        xmlns:n1="http://schemas.android.com/apk/res/android">
+        <shape n1:shape="rectangle">
+            <solid n1:color="@color/color_grey_600" />
+            <corners n1:radius="@dimen/dp_30" />
+        </shape>
+    </item>
+    <item>
+        <ripple n2:color="@color/transparent_30"
+            xmlns:n2="http://schemas.android.com/apk/res/android" tools:ignore="NewApi">
+            <item n2:id="@android:id/mask">
+                <shape n2:shape="rectangle">
+                    <solid n2:color="@color/grey3" />
+                    <corners n2:radius="@dimen/dp_30" />
+                </shape>
+            </item>
+            <item>
+                <shape n2:shape="rectangle">
+                    <solid n2:color="@color/transparent" />
+                    <stroke n2:width="1.0dip" n2:color="@color/grey3" />
+                    <corners n2:radius="@dimen/dp_30" />
+                </shape>
+            </item>
+        </ripple>
+    </item>
+</selector>

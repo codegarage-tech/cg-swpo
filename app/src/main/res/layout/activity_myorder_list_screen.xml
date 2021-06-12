@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/color_grey_300">
+
+    <include
+        android:id="@+id/appbarnavigationLayout"
+        layout="@layout/toolbar_details" />
+
+    <FrameLayout
+        android:id="@+id/order_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/appbarnavigationLayout"
+        />
+
+
+    <!--
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/dp_60"
+            android:scrollbarStyle="insideOverlay"
+            android:layout_below="@+id/appbarnavigationLayout"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dip"
+                    android:paddingLeft="@dimen/dp_10"
+                    android:paddingRight="@dimen/dp_5"
+                    android:background="@color/white"
+                    android:layout_marginBottom="@dimen/dp_3">
+
+                    <TextView
+                        android:id="@+id/tv_general_medicine_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginBottom="0dp"
+                        android:text="@string/title_my_orders"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/sp_16" />
+
+                </RelativeLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_medicine_order_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clipToPadding="false"
+                    android:nestedScrollingEnabled="false"
+                    android:paddingTop="@dimen/dp_5"
+                    android:paddingLeft="@dimen/dp_10"
+                    android:paddingRight="@dimen/dp_10"
+                    android:paddingBottom="@dimen/dp_10"
+                    android:visibility="visible"
+                    android:background="@color/white"
+                    />
+
+            </LinearLayout>
+
+                <include
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    layout="@layout/layout_order_delivery_address_screen"
+                    android:layout_marginTop="@dimen/dp_3"/>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/whiteColor"
+            android:orientation="horizontal"
+            android:padding="@dimen/dp_5">
+
+            <Button
+                android:id="@+id/btn_update_cart"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_35"
+                android:layout_marginRight="@dimen/dp_3"
+                android:background="@drawable/curv_shape_button_shape_bg_pink"
+                android:padding="@dimen/dp_2"
+                android:text="@string/title_update_cart"
+                android:textColor="@color/whiteColor" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_toLeftOf="@+id/btn_order_checkout"
+                android:layout_toRightOf="@+id/btn_update_cart"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:fontFamily="@string/typeface_500"
+                    android:text="Total Taka: "
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_14" />
+
+                <TextView
+                    android:id="@+id/tv_my_order_total_amt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_2"
+                    android:ellipsize="end"
+                    android:fontFamily="@string/typeface_500"
+                    android:text="1234.00 /-"
+                    android:textColor="@color/color_pink"
+                    android:textSize="@dimen/sp_14" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_order_checkout"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_35"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/curv_shape_button_shape_bg_pink"
+                android:padding="@dimen/dp_2"
+                android:text="@string/title_checkout"
+                android:textColor="@color/whiteColor" />
+
+        </RelativeLayout>-->
+
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_grey_300">
+
+    <include
+        android:id="@+id/appbarnavigationLayout"
+        layout="@layout/toolbar_details" />
+
+
+            <com.jude.easyrecyclerview.waveswiperefresh.WaveSwipeRefreshRecyclerView
+                android:id="@+id/rv_place_order"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:paddingLeft="@dimen/dp_3"
+                android:paddingTop="@dimen/dp_5"
+                android:paddingRight="@dimen/dp_3"
+                android:paddingBottom="@dimen/dp_10"
+                android:scrollbars="none"
+                app:layout_empty="@layout/view_empty"
+                app:layout_progress="@layout/view_progress" />
+
+    <LinearLayout
+        android:id="@+id/lin_login_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_grey_200"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <include
+            layout="@layout/layout_login_proceed_view"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/lin_no_data_found_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <include
+        layout="@layout/layout_no_data_found"/>
+    </LinearLayout>
+
+</LinearLayout>

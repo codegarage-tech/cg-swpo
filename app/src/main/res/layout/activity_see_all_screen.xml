@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_grey_300">
+
+    <include
+        android:id="@+id/app_details_toolbar"
+        layout="@layout/toolbar_details" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_12"
+        android:text="Categories"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_20"
+        android:fitsSystemWindows="true"
+        android:background="@color/colorPrimary"
+        android:visibility="gone"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_see_all"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:visibility="visible"
+        android:paddingTop="@dimen/dp_5"
+        android:paddingLeft="@dimen/dp_6"
+        android:paddingRight="@dimen/dp_3" />
+
+    <LinearLayout
+        android:id="@+id/lin_no_data_found_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <include
+            layout="@layout/layout_no_data_found"/>
+    </LinearLayout>
+
+</LinearLayout>
